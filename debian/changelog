@@ -1,4 +1,4 @@
-adpi-utils-backend-iio (1.0.2.1) bookworm; urgency=medium
+adpi-utils-backend-iio (1.0.3) bookworm; urgency=medium
 
   * Change initialization process to use udev rules
   * debian/control
@@ -7,7 +7,7 @@ adpi-utils-backend-iio (1.0.2.1) bookworm; urgency=medium
   * debian/install
     - Add initialization service and rules
 
- -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Thu, 15 Jun 2023 11:38:48 +0900
+ -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Fri, 16 Jun 2023 02:37:22 +0000
 
 adpi-utils-backend-iio (1.0.2) bullseye; urgency=medium
 
