@@ -7,3 +7,4 @@ After=dev-%i.device dev-i2c\x2d1.device
 [Service]
 Type=oneshot
 ExecStart=/bin/bash -c "/usr/sbin/adpictl --iio $(echo %i | sed -e 's/iio:device//') set gain 1"
+RemainAfterExit=yes
