@@ -116,7 +116,7 @@ set_gpio ()
   
   case $2 in
   0|off)
-    gpioget --bias=pull-down $(gpiofind "$line")
+    gpioget --bias=pull-down $(gpiofind "$line") > /dev/null
     ;;
   1|on)
     gpioset --bias=disable $(gpiofind "$line")=1
