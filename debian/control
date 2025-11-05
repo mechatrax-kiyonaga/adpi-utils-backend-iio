@@ -3,15 +3,15 @@ Section: misc
 Priority: optional
 Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
 Uploaders: Masahiro Honda <honda@mechatrax.com>
-Build-Depends: debhelper-compat (= 12)
-Standards-Version: 4.6.2
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.2
 Homepage: https://mechatrax.com/
 Vcs-Git: https://github.com/mechatrax/adpi-utils-backend-iio.git
 Vcs-browser: https://github.com/mechatrax/adpi-utils-backend-iio
 
 Package: adpi-utils-backend-iio
 Architecture: all
-Depends: ${misc:Depends}, bc, adpi-firmware (>= 3.0.0), gpiod
+Depends: ${misc:Depends}, bc, adpi-firmware (>= 3.0.0), gpiod (>=2.2)
 Provides: adpi-utils-backend
 Conflicts: adpi-utils-backend
 Replaces: adpi-utils-backend

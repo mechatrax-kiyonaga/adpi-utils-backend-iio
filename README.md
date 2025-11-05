@@ -6,10 +6,10 @@ IIO を利用して ADPi に搭載された ADC の操作を行うツール類�
 ## 提供ファイル
 次のファイルがパッケージに含まれています。
 
-### /lib/udev/rules.d/85-adpi-utils-backend-iio.rules  
+### /usr/lib/udev/rules.d/85-adpi-utils-backend-iio.rules  
 ADPi のデバイスを定義した設定ファイルです。
 
-### /lib/systemd/system/adpi-utils-backend-iio-init<span>@</span>.service  
+### /usr/lib/systemd/system/adpi-utils-backend-iio-init<span>@</span>.service  
 ADPi の初期化を行うサービスの設定ファイルです。
 
 ### /usr/lib/adpi-utils-backend-iio/adpi-utils-backend-iio.sh  

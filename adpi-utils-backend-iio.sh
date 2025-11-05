@@ -116,10 +116,10 @@ set_gpio ()
   
   case $2 in
   0|off)
-    gpioget --bias=pull-down $(gpiofind "$line") > /dev/null
+    gpioget --bias=pull-down "$line" > /dev/null
     ;;
   1|on)
-    gpioset --bias=disable $(gpiofind "$line")=1
+    gpioset -t0 --bias=disabled "$line"=1
     ;;
   *)
     echo "Invalid value $2" >&2
@@ -229,7 +229,7 @@ get_gpio ()
 
   local value
   
-  value=$(gpioinfo $(gpiofind $line | cut -d\  -f1) | grep $line)
+  value=$(gpioinfo "$line")
   
   case $value in
   *input*)
