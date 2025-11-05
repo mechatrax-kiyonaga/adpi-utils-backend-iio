@@ -1,3 +1,14 @@
+adpi-utils-backend-iio (2.0.1) trixie; urgency=medium
+
+  * Update for trixie
+  * debian/control
+    - Bump Standards-Version to 4.7.2
+    - Bump debhelper-compat to 13
+  * debian/install: Moved service to /usr
+  * adpi-utils-backend-iio.sh: Adapted to gpiod 2.2
+
+ -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Wed, 05 Nov 2025 18:00:27 +0900
+
 adpi-utils-backend-iio (2.0.0) bookworm; urgency=medium
 
   * Change to use gpiod for GPIO operation
